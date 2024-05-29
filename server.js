@@ -20,6 +20,7 @@ app.post("/todos", (req, res) => {
   const newTodo = {
     id: nextId++,
     title: req.body.title,
+    description: req.body.title,
     completed: false,
   };
   todos.push(newTodo);
